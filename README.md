@@ -7,5 +7,6 @@ First project with React, part of the course from codecademy. This project was b
 2. There are two search boxes where the user can type a location and term(s) that will be used to fetch restaurant data.
 3. Additionally, you can filter the results according to three options: best match, review count, and rating.
 
-**Note:** the design of this app is awful because I really wanted to focus on React functionality and not waste too much time styling the website.  
-
+**Notes:** 
+- The design of this app is awful because I really wanted to focus on React functionality and not waste too much time styling the website.  
+- For obvious reasons the API key is not included - get one at [Yelp Developer](https://docs.developer.yelp.com).  
