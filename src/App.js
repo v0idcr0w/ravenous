@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'; 
 import './App.css';
+import BusinessList from './BusinessList'; 
+import SearchBar from './SearchBar'; 
+
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]); 
+  //define a function that allows SearchBar to pass data back to App 
+  function handleSearchResult(data) {
+    setSearchResults(data); 
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <SearchBar onSearchResult={handleSearchResult} />
+        <BusinessList bizzList={searchResults} />
       </header>
     </div>
   );

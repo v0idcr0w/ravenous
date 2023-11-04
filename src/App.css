@@ -1,10 +1,88 @@
 .App {
-  text-align: center;
+  color: white; 
+  min-height: 100vh;
+  background-color: #282c34;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.business {
+  margin: 25px auto; 
+  text-align: center; 
+  display: inline-block; 
+}
+
+.businessList {
+  margin: 0 auto; 
+  text-align: center;
+}
+
+form {
+  margin: 0 auto; 
+  padding-top: 25px;
+  text-align: center; 
+}
+
+input[type="text"] {
+  padding: 10px; 
+  margin: 10px 20px; 
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  appearance: none; 
+}
+
+input[type="radio"] + label::before {
+  content: ""; /* Create a custom button appearance */
+  display: inline-block;
+  width: 20px; /* Adjust the button size */
+  height: 20px;
+  margin-right: 5px; /* Add spacing between the button and text */
+  vertical-align: middle;
+}
+
+input[type="radio"] + label {
+  color: gray; /* Set the initial text color */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+input[type="radio"]:checked + label {
+  color: white; /* Change text color when checked */
+}
+
+button {
+  width: 100px;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+table {
+  margin: 0 auto; 
+}
+
+thead {
+  text-align: left; 
+}
+
+td { 
+  font-size: 18px;
+  white-space: nowrap; 
+  line-height: 1.25;
+  padding-right: 70px;
+  text-align: left; 
+}
+
+td.gold {
+  color: gold; 
+}
+
+td.right{
+  text-align: right; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,25 +92,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
+  
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
